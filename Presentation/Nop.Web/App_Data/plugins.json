@@ -10,6 +10,10 @@
     {
       "SystemName": "Payments.CheckMoneyOrder",
       "Version": "1.51"
+    },
+    {
+      "SystemName": "Shipping.FixedByWeightByTotal",
+      "Version": "2.36"
     }
   ],
   "PluginNamesToUninstall": [],
@@ -17,6 +21,10 @@
   "PluginNamesToInstall": [
     {
       "Item1": "Payments.CheckMoneyOrder",
+      "Item2": "a7c03fb0-5fc6-4109-82ef-161d5f576f5a"
+    },
+    {
+      "Item1": "Shipping.FixedByWeightByTotal",
       "Item2": "a7c03fb0-5fc6-4109-82ef-161d5f576f5a"
     }
   ]

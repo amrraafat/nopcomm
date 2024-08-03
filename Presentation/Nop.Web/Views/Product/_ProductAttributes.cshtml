@@ -133,20 +133,13 @@
                                 <textarea cols="20" id="@(controlId)" name="@(controlId)">@(attribute.DefaultValue)</textarea>
                             }
                             break;
-case AttributeControlType.Datepicker:
-    {
-        // Assuming a standard date picker component
-        <input type="date" asp-for="Model.SelectedDate" />
-
-        // Or, using a custom component with improved clarity
-        <nop-date-picker
-            id="@controlId"
-            selected-date="@Model.SelectedDate"
-            min-year="@DateTime.UtcNow.Year"
-            max-year="@(DateTime.UtcNow.Year + catalogSettings.CountDisplayedYearsDatePicker)" />
-    }
-    break;
-
+                        case AttributeControlType.Datepicker:
+                            {
+                                <input type="date" id="@controlId"
+                                       name="@controlId"
+                                       value="@CommonHelper.ParseDate(attribute.SelectedYear, attribute.SelectedMonth, attribute.SelectedDay)?.ToString("yyyy-MM-dd")" />
+                            }
+                            break;
                         case AttributeControlType.FileUpload:
                             {
                                 Download download = null;
