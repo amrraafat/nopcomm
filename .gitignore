@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Presentation/Nop.Web/App_Data/plugins.json
+/Presentation/Nop.Web/Plugins/Shipping.FixedByWeightByTotal/Nop.Plugin.Shipping.FixedByWeightByTotal.deps.json
