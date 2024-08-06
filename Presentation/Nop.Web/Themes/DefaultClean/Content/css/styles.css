@@ -1,8 +1,46 @@
-
+﻿
 
 /*********** CSS RESET **********/
+.header-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important; /* محاذاة العناصر إلى اليسار */
+    padding: 0 20px; /* حواف داخلية للتأكد من عدم التصاق العناصر بجوانب الصفحة */
+    width: 100%;
+}
+
+.header-logo {
+    margin-right: 0 !important; /* إزالة أي مسافات إضافية قد تؤدي إلى فصل الشعار عن القائمة */
+    padding-right: 10px !important; /* إضافة مساحة صغيرة فقط إذا لزم الأمر */
+    align-items: end !important;
+}
+
+.top-menu {
+    display: flex !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* يجعل القائمة تستخدم كل المساحة المتبقية */
+    justify-content: flex-end; /* يجعل القائمة تتواجد في النهاية اليمنى */
+}
+
+    .top-menu li {
+        margin-left: 20px !important; /* مسافة بين عناصر القائمة */
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+    ---------------------------------------------------------------------
 * {
   margin: 0;
   padding: 0;
@@ -982,18 +1020,18 @@ label, label + * {
 }
 
 .header-logo {
-  margin: 0 0 20px;
-  text-align: center;
+    margin: 0 0 20px;
+    text-align: end;
 }
 
 .header-logo a {
-  display: inline-block;
+  display: inline;
   max-width: 100%;
   line-height: 0; /*firefox line-height bug fix*/
 }
 
 .header-logo a img {
-  max-width: 100%;
+  max-width: 20%;
   opacity: 1;
 }
 
